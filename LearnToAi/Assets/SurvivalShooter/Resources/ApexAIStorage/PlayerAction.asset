@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1719459976, guid: 6012f3241c1c1f7409c44769fc0a1db7, type: 3}
+  m_Name: PlayerAction
+  m_EditorClassIdentifier: 
+  description: 
+  version: 16777984
+  aiId: af2f94d5-8982-450f-8a5c-b8c8b87ce78c
+  configuration: '{"@type":"Apex.AI.UtilityAI, ApexAI","_rootSelectorId":de6d3aa4c16c440da1d24dde8ce67833,"_id":af2f94d58982450f8a5cb8c8b87ce78c,"_selectors":[{"@type":"Apex.AI.ScoreSelector,
+    ApexAI","_id":de6d3aa4c16c440da1d24dde8ce67833,"_qualifiers":[{"@type":"Apex.AI.CompositeScoreQualifier,
+    ApexAI","action":{"@type":"Apex.AI.SelectorAction, ApexAI","_selectorId":2e525bd76053489e8ae21e0c62200060},"_scorers":[{"@type":"Apex.UnitySurvivalShooter.HasEnemies,
+    Assembly-CSharp","score":10}]}],"_defaultQualifier":{"@type":"Apex.AI.DefaultQualifier,
+    ApexAI","action":{"@type":"Apex.UnitySurvivalShooter.EmptyAction, Assembly-CSharp"}}},{"@type":"Apex.AI.PrioritySelector,
+    ApexAI","_id":2e525bd76053489e8ae21e0c62200060,"_qualifiers":[{"@type":"Apex.AI.CompositeAllOrNothingQualifier,
+    ApexAI","action":{"@type":"Apex.UnitySurvivalShooter.UseBandAid, Assembly-CSharp"},"threshold":100,"_scorers":[{"@type":"Apex.UnitySurvivalShooter.HealthBelowThreshold,
+    Assembly-CSharp","threshold":35,"score":200},{"@type":"Apex.UnitySurvivalShooter.HasBandAids,
+    Assembly-CSharp","score":200}]},{"@type":"Apex.AI.CompositeAllOrNothingQualifier,
+    ApexAI","action":{"@type":"Apex.UnitySurvivalShooter.ThrowBomb, Assembly-CSharp"},"threshold":100,"_scorers":[{"@type":"Apex.UnitySurvivalShooter.HasEnemiesInRange,
+    Assembly-CSharp","score":110},{"@type":"Apex.UnitySurvivalShooter.CanThrowBomb,
+    Assembly-CSharp","score":110}]},{"@type":"Apex.AI.CompositeScoreQualifier, ApexAI","action":{"@type":"Apex.UnitySurvivalShooter.ReloadGun,
+    Assembly-CSharp"},"_scorers":[{"@type":"Apex.UnitySurvivalShooter.IsGunLoaded,
+    Assembly-CSharp","not":true,"score":100}]},{"@type":"Apex.AI.CompositeScoreQualifier,
+    ApexAI","action":{"@type":"Apex.AI.CompositeAction, ApexAI","_actions":[{"@type":"Apex.UnitySurvivalShooter.SetBestAttackTarget,
+    Assembly-CSharp","_scorers":[{"@type":"Apex.UnitySurvivalShooter.EnemyProximityToSelf,
+    Assembly-CSharp","score":50},{"@type":"Apex.UnitySurvivalShooter.IsAliveScorer,
+    Assembly-CSharp","score":100},{"@type":"Apex.UnitySurvivalShooter.IsCurrentTargetScorer,
+    Assembly-CSharp","score":1.5}]},{"@type":"Apex.UnitySurvivalShooter.FireAtAttackTarget,
+    Assembly-CSharp"}]},"_scorers":[{"@type":"Apex.UnitySurvivalShooter.IsGunLoaded,
+    Assembly-CSharp","score":10}]}],"_defaultQualifier":{"@type":"Apex.AI.DefaultQualifier,
+    ApexAI","action":{"@type":"Apex.UnitySurvivalShooter.EmptyAction, Assembly-CSharp"}}}]}'
+  editorConfiguration: '{"offset":{"@x":-16,"@y":-106},"zoom":1,"SelectorView":{"ViewArea":{"@left":124,"@top":134,"@width":300,"@height":160},"Name":"Act
+    or Idle","QualifierView":{"Name":"Has Enemies","ActionView":{"@connectorType":"Selector"}},"DefaultQualifier":{"ActionView":{"Name":"Idle"}}},"SelectorView":{"ViewArea":{"@left":684,"@top":34,"@width":300,"@height":340},"Name":"Select
+    Action","QualifierView":{"Name":"Use Health","ActionView":{}},"QualifierView":{"Name":"Throw
+    Bomb","ActionView":{}},"QualifierView":{"Name":"Reload Gun","ActionView":{}},"QualifierView":{"Name":"Fire
+    Gun","ActionView":{"Name":"Set Target and Fire Gun"}},"DefaultQualifier":{"ActionView":{"Name":"Idle"}}}}'

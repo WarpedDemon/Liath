@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1719459976, guid: 6012f3241c1c1f7409c44769fc0a1db7, type: 3}
+  m_Name: PlayerMove
+  m_EditorClassIdentifier: 
+  description: 
+  version: 16777216
+  aiId: 8a609bc8-96a3-4e98-b003-5f3e88e1d95c
+  configuration: '{"@type":"Apex.AI.UtilityAI, ApexAI","_rootSelectorId":96aea9baf96344bda75ca55361201b3d,"_id":8a609bc896a34e98b0035f3e88e1d95c,"_selectors":[{"@type":"Apex.AI.ScoreSelector,
+    ApexAI","_id":96aea9baf96344bda75ca55361201b3d,"_qualifiers":[{"@type":"Apex.AI.CompositeScoreQualifier,
+    ApexAI","action":{"@type":"Apex.AI.SelectorAction, ApexAI","_selectorId":945b116be409420b82578c0b2b014c1e},"_scorers":[{"@type":"Apex.UnitySurvivalShooter.HasEnemies,
+    Assembly-CSharp","score":100}]}],"_defaultQualifier":{"@type":"Apex.AI.DefaultQualifier,
+    ApexAI","action":{"@type":"Apex.UnitySurvivalShooter.EmptyAction, Assembly-CSharp"}}},{"@type":"Apex.AI.ScoreSelector,
+    ApexAI","_id":945b116be409420b82578c0b2b014c1e,"_qualifiers":[{"@type":"Apex.AI.CompositeAllOrNothingQualifier,
+    ApexAI","action":{"@type":"Apex.UnitySurvivalShooter.MoveToClosestPowerUp, Assembly-CSharp","_scorers":[{"@type":"Apex.UnitySurvivalShooter.PowerupProximityToSelf,
+    Assembly-CSharp","score":30}]},"threshold":100,"_scorers":[{"@type":"Apex.UnitySurvivalShooter.HasEnemiesInRange,
+    Assembly-CSharp","range":15,"not":true,"score":200},{"@type":"Apex.UnitySurvivalShooter.HasPowerUpsInRange,
+    Assembly-CSharp","range":8,"score":200}]}],"_defaultQualifier":{"@type":"Apex.AI.DefaultQualifier,
+    ApexAI","action":{"@type":"Apex.UnitySurvivalShooter.MoveToBestPosition, Assembly-CSharp","_scorers":[{"@type":"Apex.UnitySurvivalShooter.PositionProximityToSelf,
+    Assembly-CSharp","factor":0.1,"score":10},{"@type":"Apex.UnitySurvivalShooter.ProximityToNearestEnemy,
+    Assembly-CSharp","desiredRange":20000.131,"score":50},{"@type":"Apex.UnitySurvivalShooter.OverRangeToClosestEnemy,
+    Assembly-CSharp","desiredRange":5,"score":100},{"@type":"Apex.UnitySurvivalShooter.ProximityToClosestPowerUp,
+    Assembly-CSharp","multiplier":2,"score":20},{"@type":"Apex.UnitySurvivalShooter.LineOfSightToAnyEnemy,
+    Assembly-CSharp","score":50},{"@type":"Apex.UnitySurvivalShooter.LineOfSightToClosestEnemy,
+    Assembly-CSharp","score":50},{"@type":"Apex.UnitySurvivalShooter.OverRangeToAnyEnemy,
+    Assembly-CSharp","desiredRange":5,"score":50},{"@type":"Apex.UnitySurvivalShooter.OverRangeToAnyEnemySpawner,
+    Assembly-CSharp","desiredRange":5,"score":500},{"@type":"Apex.UnitySurvivalShooter.ProximityToPlayerSpawner,
+    Assembly-CSharp","score":20}]}}}]}'
+  editorConfiguration: '{"offset":{"@x":434,"@y":170},"zoom":1,"SelectorView":{"ViewArea":{"@left":274,"@top":230,"@width":300,"@height":160},"Name":"Move
+    or Idle","QualifierView":{"Name":"Has Enemies","ActionView":{"@connectorType":"Selector"}},"DefaultQualifier":{"ActionView":{"Name":"Idle"}}},"SelectorView":{"ViewArea":{"@left":774,"@top":230,"@width":300,"@height":160},"Name":"Pick
+    Up Power-up or Tactical Move","QualifierView":{"Name":"Move To Power Up","ActionView":{}},"DefaultQualifier":{"Name":"Tactical
+    Move","ActionView":{"Name":"Move To Best Destination"}}}}'

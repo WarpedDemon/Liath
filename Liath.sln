@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liath.Plugins", "Liath.Plugins.csproj", "{56A04E92-29F4-1D2F-AC1C-BEB848207915}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liath", "Liath.csproj", "{855AE866-4672-0A58-DDE5-5463FA399DFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liath.Editor.Plugins", "Liath.Editor.Plugins.csproj", "{20420B94-2345-E67C-0E1B-EAA7C5D0DED0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56A04E92-29F4-1D2F-AC1C-BEB848207915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56A04E92-29F4-1D2F-AC1C-BEB848207915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56A04E92-29F4-1D2F-AC1C-BEB848207915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56A04E92-29F4-1D2F-AC1C-BEB848207915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{855AE866-4672-0A58-DDE5-5463FA399DFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{855AE866-4672-0A58-DDE5-5463FA399DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{855AE866-4672-0A58-DDE5-5463FA399DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{855AE866-4672-0A58-DDE5-5463FA399DFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20420B94-2345-E67C-0E1B-EAA7C5D0DED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20420B94-2345-E67C-0E1B-EAA7C5D0DED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20420B94-2345-E67C-0E1B-EAA7C5D0DED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20420B94-2345-E67C-0E1B-EAA7C5D0DED0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
